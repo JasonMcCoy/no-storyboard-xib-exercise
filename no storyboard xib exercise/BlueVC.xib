@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A239j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlueVC" customModule="no_storyboard_xib_exercise" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="cJQ-Ma-rbx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixp-a7-QsW">
+                    <frame key="frameInset" minX="164" minY="318" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2A-6s-SQU">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="azH-2o-M7u"/>
+                        <constraint firstAttribute="width" constant="202" id="hh9-8C-z30"/>
+                    </constraints>
+                    <state key="normal" image="Button2"/>
+                    <connections>
+                        <action selector="go2RedVC:" destination="-1" eventType="touchUpInside" id="ZIC-M2-tIO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goto Red Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taW-tW-NWd">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="Bc0-Ys-5TM"/>
+                        <constraint firstAttribute="height" constant="21" id="ir2-21-4uF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="taW-tW-NWd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JSA-4i-ZlF"/>
+                <constraint firstItem="B2A-6s-SQU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="L4I-UL-OWi"/>
+                <constraint firstItem="B2A-6s-SQU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nwK-5b-zGV"/>
+                <constraint firstItem="taW-tW-NWd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-4" id="pHz-Yg-hcL"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
+        </view>
+        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgq-y7-GvI">
+            <constraints>
+                <constraint firstAttribute="width" constant="202" id="Hyh-kF-RYp"/>
+                <constraint firstAttribute="height" constant="66" id="rR9-bV-HNK"/>
+            </constraints>
+            <state key="normal" image="Button1"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="Button1" width="424" height="156"/>
+        <image name="Button2" width="424" height="156"/>
+    </resources>
+</document>

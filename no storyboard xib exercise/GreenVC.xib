@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A239j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GreenVC" customModule="no_storyboard_xib_exercise" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="eF9-l3-TEW" id="mgV-2c-Eht"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eF9-l3-TEW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMi-ab-d3U">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="202" id="Osb-TH-bCQ"/>
+                        <constraint firstAttribute="height" constant="66" id="wZ0-ON-ICJ"/>
+                    </constraints>
+                    <state key="normal" image="Button1"/>
+                    <connections>
+                        <action selector="go2BlueVC:" destination="-1" eventType="touchUpInside" id="6Bb-mx-P1b"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goto Blue Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zJ-Za-tbE">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="184" id="5fv-eQ-MV5"/>
+                        <constraint firstAttribute="height" constant="21" id="Hme-Yd-ks5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8zJ-Za-tbE" firstAttribute="centerX" secondItem="eF9-l3-TEW" secondAttribute="centerX" id="HzN-GY-ITq"/>
+                <constraint firstItem="LMi-ab-d3U" firstAttribute="centerX" secondItem="eF9-l3-TEW" secondAttribute="centerX" id="U3Y-ho-MX3"/>
+                <constraint firstItem="8zJ-Za-tbE" firstAttribute="centerY" secondItem="eF9-l3-TEW" secondAttribute="centerY" constant="-4" id="a2g-Yi-FTL"/>
+                <constraint firstItem="LMi-ab-d3U" firstAttribute="centerY" secondItem="eF9-l3-TEW" secondAttribute="centerY" id="gJb-hC-DCs"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="39.5"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Eea-Hw-U6U">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="Button1" width="424" height="156"/>
+    </resources>
+</document>
