@@ -11,6 +11,7 @@ Here is what I'm doing:
 
 
 Here is a .gif regarding what the app looks like:
+
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/ezgif-3673844768.gif)
 
 
